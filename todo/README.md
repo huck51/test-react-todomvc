@@ -19,7 +19,7 @@ Create React App was used in order to quickly set up a file tree and some boiler
 
 The project is set up with App.js being the only container/stateful component. It's data and methods are passed down to the four other components via props.
 
-You will notice that the state (and by extension, your to-do list) persists even when the page is closed or refreshed. This is accomplished by saving a copy of the to-do list to localStorage every time the state is updated. When the page is refreshed or closed and reopened the data from localStorage is fetched and set as state in componentDidMount.
+You will notice that the state (and by extension, your to-do list) persists even when the page is closed or refreshed. This is accomplished by saving a copy of the to-do list to localStorage every time the state is updated. When the page is refreshed or closed and reopened the data from localStorage is fetched and set as the state in the componentDidMount lifecycle method.
 
 The styling, color scheme, and tab icon were designed to mimic those used at Genius Plaza.
 
