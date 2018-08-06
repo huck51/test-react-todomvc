@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TodoMain from './components/TodoMain';
+import AddTodo from './components/AddTodo';
 import './App.css';
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
     return (
       <div>
         <TodoMain>
+          <AddTodo />
         </TodoMain>
       </div>
     );
