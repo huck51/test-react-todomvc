@@ -11,11 +11,36 @@ class App extends Component {
       todos: [],
     };
   }
+  handleChange = (e) => {
+    this.setState({
+      value: e.target.value,
+    });
+  }
+  handleSubmit = (e) => {
+    e.preventDefault();
+    if (this.state.value.trim()) {
+      const todo = {
+        completed: false,
+        task: this.state.value.trim(),
+      };
+      const todos = this.state.todos;
+      todos.push(todo);
+      this.setState({
+        value: '',
+        todos,
+      });
+      window.localStorage.setItem('Todos', JSON.stringify(this.state.todos));
+    }
+  }
   render() {
     return (
       <div>
         <TodoMain>
-          <AddTodo />
+          <AddTodo
+            onChange={this.handleChange}
+            onSubmit={this.handleSubmit}
+            value={this.state.value}
+          />
         </TodoMain>
       </div>
     );
