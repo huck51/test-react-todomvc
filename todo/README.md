@@ -2,15 +2,15 @@
 
 > This app was built using React, Create React App, and ESLint. You may view their documentation using the links provided below.
 
-[React](https://reactjs.org/)
-[Create React App](https://github.com/facebook/create-react-app)
-[ESLint](https://eslint.org/)
+- [React](https://reactjs.org/)
+- [Create React App](https://github.com/facebook/create-react-app)
+- [ESLint](https://eslint.org/)
 
 ## Resources
 
 
 - [Genius Plaza](https://www.geniusplaza.com/en/)
-I used the Genius Plaza website to get my color scheme, tab icon and some general stylistic inspiration.
+- I used the Genius Plaza website to get my color scheme, tab icon and some general stylistic inspiration.
 
 ## Implementation
 
