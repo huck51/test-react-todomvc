@@ -4,26 +4,27 @@ import PropTypes from 'prop-types';
 const Todo = ({ completed, deleteTodo, index, task, toggleCompleted }) => {
   return (
     <li>
-      <div>
-        <p>
+      <div className="todoInner">
+        <p className={completed ? 'strikeText' : ''}>
           {task}
         </p>
-        <form>
+        <form className="completedForm">
           <label for={index}>
             {'Completed '}
           </label>
           <input
             checked={completed}
             name={index}
+            onClick={toggleCompleted}
             type="checkbox"
             value={completed}
-            onClick={toggleCompleted}
           />
         </form>
       </div>
       <button
-        type="button"
+        className="destroy"
         onClick={deleteTodo}
+        type="button"
       >
         <strong id={index}>
           X

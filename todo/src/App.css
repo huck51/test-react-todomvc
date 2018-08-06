@@ -1,0 +1,82 @@
+
+body, html {
+  background-color: #32A1DA;
+  color: #FDBB4E;
+}
+h1 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  margin-top: 3em;
+}
+li {
+  background-color: white;
+  color: #32A1DA;
+  border: solid 1px #32A1DA;
+  list-style: none;
+  margin: .5em;
+  box-shadow: 1px 1px 5px black;
+}
+li:hover>.destroy {
+  visibility: visible;
+}
+ul {
+  background-color: #FDBB4E;
+  border: solid 2px #FDBB4E;
+  padding: 1em;
+  width: 70%;
+  margin: 2em auto;
+  box-shadow: 1px 1px 5px black;
+  min-height: 25em;
+}
+.addTodoForm {
+  margin: auto;
+  width: 73%;
+  box-shadow: 1px 1px 5px black;
+  background-color: #41AE5D;
+}
+.addBtn {
+  height: 2.25em;
+  width: 5%;
+  font-size: 1.05em;
+  background-color: #41AE5D;
+  color: white;
+  border-color: #41AE5D;
+}
+.counterText {
+  color: #32A1DA;
+}
+.destroy {
+  background-color: red;
+  color: white;
+  visibility: hidden;
+  height: 100%;
+  width: 15%;
+  font-size: 3.5em;
+  border-left: solid 1px black;
+  cursor: pointer;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  float: right;
+  padding-bottom: 12px;
+}
+.searchBar {
+  width: 94%;
+  height: 2em;
+  margin: auto;
+  font-size: 1em;
+}
+.strikeText {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+.todoInner {
+  width: 80%;
+  height: 100%;
+  display: inline-block;
+  padding-left: 1em;
+  padding-bottom: 10px;
+
+}

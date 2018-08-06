@@ -9,14 +9,14 @@ const TodoDisplay = ({ deleteTodo, todos, toggleCompleted }) => {
         <div>
           {
             todos.length === 1 ? (
-              <p>
+              <p className="counterText">
                 <strong>
                   {todos.length + ' '}
                 </strong>
                 Item
               </p>
             ) : (
-              <p>
+              <p className="counterText">
                 <strong>
                   {todos.length + ' '}
                 </strong>
@@ -27,11 +27,11 @@ const TodoDisplay = ({ deleteTodo, todos, toggleCompleted }) => {
         </div>
         {todos.map((todo, index) => (
           <Todo
-            task={todo.task}
             completed={todo.completed}
-            toggleCompleted={toggleCompleted}
-            index={index}
             deleteTodo={deleteTodo}
+            index={index}
+            task={todo.task}
+            toggleCompleted={toggleCompleted}
           />
         ))
         }

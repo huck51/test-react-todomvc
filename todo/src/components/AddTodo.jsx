@@ -5,16 +5,19 @@ const AddTodo = ({ onChange, onSubmit, value }) => {
   return (
     <div>
       <form
+        className="addTodoForm"
         onSubmit={onSubmit}
       >
         <input
           autoFocus
+          className="searchBar"
           name="addTodo"
           onChange={onChange}
           type="text"
           value={value}
         />
         <button
+          className="addBtn"
           onClick={onSubmit}
           type="submit"
         >
